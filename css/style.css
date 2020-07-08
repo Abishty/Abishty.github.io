@@ -217,17 +217,19 @@ header p {
 .news-content {
 	display: flex;
 	flex-direction: row;
+	margin-top: 10px;
 }
 .news-video a p {
 	margin-top: 10px;
 	color: black;
+	font-size: 16px;
 }
 .news-video a p:hover {
 	color: #ec1c2c;
 }
 .news-list {
 	margin-bottom: 40px;
-	margin-left: 40px;
+	margin-left: 55px;
 	list-style: inherit;
 }
 .news-list li a p {
