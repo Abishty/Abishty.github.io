@@ -134,11 +134,17 @@ hr {
 }
 /* Home Style */
 header {
-	background: url(../img/coverPicture1.jpg) no-repeat bottom right;
+	background: url(../img/coverPicture2.jpg) no-repeat bottom right;
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
 	height: 100%;
+}
+.overlay {
+	position: absolute;
+	width: 100vw;
+	height: inherit;
+	background-color: rgba(0,0,0,0.2);
 }
 header p {
 	color: rgba(255,255,255,0.8);
@@ -217,19 +223,18 @@ header p {
 .news-content {
 	display: flex;
 	flex-direction: row;
-	margin-top: 10px;
+	justify-content: center;
 }
 .news-video a p {
 	margin-top: 10px;
 	color: black;
-	font-size: 16px;
 }
 .news-video a p:hover {
 	color: #ec1c2c;
 }
 .news-list {
 	margin-bottom: 40px;
-	margin-left: 55px;
+	margin-left: 40px;
 	list-style: inherit;
 }
 .news-list li a p {
