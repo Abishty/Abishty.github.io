@@ -112,7 +112,8 @@ hr {
 	letter-spacing: 1px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #f1a01f;
+	color: #fff;
+	font-weight: bold;
 }
 .on {
 	background-color: #ec1c2c !important;
@@ -134,7 +135,7 @@ hr {
 }
 /* Home Style */
 header {
-	background: url(../img/coverPicture2.jpg) no-repeat bottom right;
+	background: url(../img/coverPicture4.jpg) no-repeat bottom right;
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
@@ -144,7 +145,7 @@ header {
 	position: absolute;
 	width: 100vw;
 	height: inherit;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.3);
 }
 header p {
 	color: rgba(255,255,255,0.8);
