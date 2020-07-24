@@ -247,6 +247,22 @@ header p {
   color: #0dbf9b;
 }
 
+/* Ched Section */
+
+.chef-content {
+  display: flex;
+  flex-direction: row;
+}
+.chef-content img {
+  align-self: center;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+}
+.chef-desc {
+  padding-left: 90px;
+}
+
 /* News & Media Section */
 
 .news-content {
@@ -774,6 +790,17 @@ a:focus {
   .news-list-1 li,
   .news-list-2 li {
 	  margin-top: 30px;
+  }
+  .chef-content {
+    flex-direction: column;
+  }
+  .chef-content img {
+    width: 300px;
+    height: 300px;
+  }
+  .chef-desc {
+    padding-left: 0px;
+    padding-top: 10px;
   }
 }
 @media (min-width: 769px) {
