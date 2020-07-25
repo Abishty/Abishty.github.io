@@ -82,7 +82,7 @@ ol {
   list-style: none;
 }
 #bs-example-navbar-collapse-1 {
-  width: 100%;
+  width: 75%;
   padding: 0;
   overflow: hidden;
   margin-left: auto;
@@ -131,7 +131,7 @@ hr {
   letter-spacing: 1px;
   transition: 0.5s ease-in;
 }
-div.logoAndOptions {
+div.logoAndOptions a {
   display: none;
 }
 
@@ -143,7 +143,7 @@ div.logoAndOptions {
   background-color: #ec1c2c !important;
   padding: 0 !important;
 }
-.on div.logoAndOptions {
+.on div.logoAndOptions a {
   display: block;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -249,20 +249,56 @@ header p {
   color: #0dbf9b;
 }
 
-/* Ched Section */
+/* Chef Section */
+.chef-section {
+  align-items: center;
+  padding: 0px;
+  display: flex;
+}
 
+.chef-section img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
 .chef-content {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.chef-content img {
-  align-self: center;
-  width: 320px;
-  height: 320px;
+.chef-desc {
+  padding-left: 90px;
+}
+
+/* Baker Confidential */
+.baker-section {
+  align-items: center;
+  display: flex;
+  padding: 0px;
+}
+.baker-section img {
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
 }
-.chef-desc {
+#baker-confidential .social-baker ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+#baker-confidential .social-baker ul {
+  width: 100%;
+}
+#baker-confidential .social-baker i.fa {
+  font-size: 24px;
+  padding: 4px 5px;
+  color: #ec1c2c;
+  transition: all 0.5s;
+}
+#baker-confidential .social-baker i.fa:hover {
+  color: #f1a01f;
+}
+
+.baker-desc {
   padding-left: 90px;
 }
 
@@ -304,62 +340,6 @@ header p {
 }
 .asianage {
   height: 75px;
-}
-
-/* Baker Confidential */
-.baker-detail {
-  width: 30%;
-  max-width: 350px;
-  max-height: 350px;
-  padding: 10px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-.baker-title h2 {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.baker-detail img {
-  width: 100%;
-  height: 100%;
-}
-.baker-detail p {
-  align-self: center;
-  padding-left: 30px;
-}
-#baker-confidential .social-baker ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-#baker-confidential .social-baker ul {
-  width: 100%;
-}
-#baker-confidential .social-baker i.fa {
-  font-size: 24px;
-  padding: 4px 5px;
-  color: #ec1c2c;
-  transition: all 0.5s;
-}
-#baker-confidential .social-baker i.fa:hover {
-  color: #f1a01f;
-}
-
-#bakerContainer {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  height: 100%;
-}
-
-#bakerContent {
-  text-align: left;
-  /* box-sizing: border-box; */
-  /* padding: 0 40px; */
-  padding-left: 90px;
-  margin-left: auto;
-  width: 70%;
 }
 
 /* Gallery Section New
@@ -736,7 +716,18 @@ a:focus {
   color: #0dad8d;
 }
 
+.about-section, .chef-section, .baker-section, .gallery-section, .news-media-section {
+  padding: 0px 90px;
+}
+
 @media (max-width: 768px) {
+  .chef-section, .baker-section {
+    display: block;
+  }
+
+  .chef-desc, .baker-desc {
+    padding: 0px;
+  }
   .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
   }
@@ -751,47 +742,16 @@ a:focus {
     display: flex;
     align-items: center;
   }
-  .navbar-default .navbar-toggle {
-    margin-left: auto;
-  }
-  .content {
-    padding: 40% 0 0;
-  }
-}
-
-@media (max-width: 603px) {
-  #menu.navbar-default {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  label {
-    float: none !important;
-  }
-  .hover-bg .hover-text {
-    padding: 12% 10%;
-  }
-}
-
-@media (max-width: 360px) {
-  .hover-bg .hover-text {
-    padding: 22% 10%;
-  }
-}
-@media (max-width: 768px) {
-  .about-desc {
+  /* .about-desc {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  } */
   .baker-detail {
     width: 50%;
   }
   .logoAndOptions {
     display: flex;
     align-items: center;
-    width: 100%;
-  }
-  .navbar-header {
-    align-items: start;
-    flex-direction: column;
   }
   .mobile_view {
     display: block !important;
@@ -830,6 +790,43 @@ a:focus {
   .chef-desc {
     padding-left: 0px;
     padding-top: 10px;
+  }
+  .navbar-default .navbar-toggle {
+    margin-left: auto;
+  }
+  .content {
+    padding: 40% 0 0;
+  }
+}
+
+@media (max-width: 603px) {
+  #menu.navbar-default {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  label {
+    float: none !important;
+  }
+  .hover-bg .hover-text {
+    padding: 12% 10%;
+  }
+}
+
+@media (max-width: 414px) {
+  .about-section, .chef-section, .baker-section, .gallery-section, .news-media-section {
+    padding: 0px 10px;
+  }
+  div.logoAndOptions {
+    width: 100%;
+  }
+
+  div.navbar-header {
+    display: block;
+  }
+  #bs-example-navbar-collapse-1 {
+    width: 100%;
+  }
+  .hover-bg .hover-text {
+    padding: 22% 10%;
   }
 }
 @media (min-width: 769px) {
